@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="script.js"></script>
+        <title>FCT</title>
+    </head>
+    <body>
+        <div>
+            <form class="format">
+
+                <div class="container">
+                    <h1>Registo</h1>
+                    <hr>
+                    <label>
+                        <b>Email</b><br>
+                        <input type="text" placeholder="Inserir Email" name="email" class="inputs" required><br>
+                    </label>
+                    <label>
+                        <b>Password</b><br>
+                        <input type="password" placeholder="Inserir Password" name="email" class="inputs" required><br>
+                    </label>
+                    <label>
+                        <b>Repetir Password</b><br>
+                        <input type="password" placeholder="Repetir Password" name="email" class="inputs" required>
+                    </label>
+                    <hr>
+                    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+                    <button type="submit" class="registerbtn" onclick="check()">Register</button>
+                </div>
+
+                <div class="container-signin">
+                    <p id="signir-text">Já estás registado? <a href="#">Log in</a>.</p>
+                </div>
+
+                <div id="alert">
+                    <span class="closebtn" id="span1" onclick="this.parentElement.style.display='none';">&times</span>
+                    <p id="text"></p>
+                </div>
+
+
+            </form>
+        </div>
+    </body>
+</html>
